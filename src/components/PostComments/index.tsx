@@ -4,7 +4,7 @@ import styles from './PostComments.module.css';
 import Comment from '../../models/Comment';
 
 const Post = () => {
-    const [comments, setComments] = useState<Comment[]>([]);
+    const [comments, setComments] = useState<Array<Comment>>([]);
     const [tempComment, setTempComment] = useState('');
 
     function handleAddComment(event: FormEvent<HTMLFormElement>) {
