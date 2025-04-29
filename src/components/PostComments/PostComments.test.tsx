@@ -4,7 +4,11 @@ import PostComment from '.';
 
 describe('Teste para o componente PostComment', () => {
     test('Deve renderizar o componente corretamente', () => {
-        render(<PostComment />);
+        render(
+            <PostComment imageUrl="https://via.placeholder.com/150">
+                Primeiro Comentario
+            </PostComment>
+        );
         expect(screen.getByText('Comentar')).toBeInTheDocument();
     });
     test('Deve renderizar dois comentarios', () => {
