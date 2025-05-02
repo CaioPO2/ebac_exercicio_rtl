@@ -1,6 +1,7 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import PostComment from '.';
+import '@testing-library/jest-dom';
 
 describe('Teste para o componente PostComment', () => {
     test('Deve renderizar o componente corretamente', () => {
